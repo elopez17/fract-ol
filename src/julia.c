@@ -6,7 +6,7 @@
 /*   By: eLopez <elopez@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/27 18:17:33 by eLopez            #+#    #+#             */
-/*   Updated: 2017/12/03 10:11:51 by eLopez           ###   ########.fr       */
+/*   Updated: 2017/12/05 12:42:58 by elopez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static int	julia_iter(t_comp *j, t_point screen)
 
 void		julia(t_fra *f)
 {
-	t_comp	j;
+	t_comp		j;
 	intmax_t	x;
 	intmax_t	y;
 

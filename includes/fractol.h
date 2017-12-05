@@ -6,7 +6,7 @@
 /*   By: eLopez <elopez@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/21 00:06:40 by eLopez            #+#    #+#             */
-/*   Updated: 2017/12/03 00:08:24 by eLopez           ###   ########.fr       */
+/*   Updated: 2017/12/05 12:39:37 by elopez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,40 +74,40 @@ typedef struct	s_fractal
 /*
 **	These functions are used to set values ad reset.
 */
-void	fra_init(t_fra *f);
-void	fra_reset(t_fra *f);
+void			fra_init(t_fra *f);
+void			fra_reset(t_fra *f);
 
 /*
 **	These functions implement the necessary procedure to produce specified
 **		fractal: mandelbrot, julia, or sierpinski.
 */
-void	mandelbrot(t_fra *f);
-void	julia(t_fra *f);
-void	sierpinski(t_fra *f);
+void			mandelbrot(t_fra *f);
+void			julia(t_fra *f);
+void			sierpinski(t_fra *f);
 
 /*
 **	This function displays control instructions in window.
 */
-void	fra_display(t_fra *f);
+void			fra_display(t_fra *f);
 
 /*
 **	These functions are used to catch events and handle expose.
 */
-int		keypress(int key, t_fra *f);
-int		mousepress(int key, int x, int y, t_fra *f);
-int		motion_hook(int x, int y, t_fra *f);
-int		expose_hook(t_fra *f);
+int				keypress(int key, t_fra *f);
+int				mousepress(int key, int x, int y, t_fra *f);
+int				motion_hook(int x, int y, t_fra *f);
+int				expose_hook(t_fra *f);
 
 /*
 **	Utilities.
 */
-void	putpixel(t_fra *f, int x, int y, int color);
-int		get_color(int n);
+void			putpixel(t_fra *f, int x, int y, int color);
+int				get_color(int n);
 
 /*
 **	These functions are used to exit due to 'ESC' or error.
 */
-void	fra_error(int error);
-void	fra_exit(t_fra *f);
+void			fra_error(int error);
+void			fra_exit(t_fra *f);
 
 #endif

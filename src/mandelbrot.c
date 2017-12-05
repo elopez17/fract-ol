@@ -6,7 +6,7 @@
 /*   By: eLopez <elopez@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/27 18:17:33 by eLopez            #+#    #+#             */
-/*   Updated: 2017/12/03 10:15:34 by eLopez           ###   ########.fr       */
+/*   Updated: 2017/12/05 12:43:52 by elopez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int	mandel_iter(t_comp *m)
 
 void		mandelbrot(t_fra *f)
 {
-	t_comp	m;
+	t_comp		m;
 	intmax_t	x;
 	intmax_t	y;
 
